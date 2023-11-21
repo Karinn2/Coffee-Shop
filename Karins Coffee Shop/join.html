@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <style>
+        html {
+            line-height: 1.15; /* 1 */
+            -webkit-text-size-adjust: 100%; /* 2 */
+        }
+
+        body {
+            font-size: 16px;
+            font-family: "Arial", Helvetica, sans-serif;
+            margin: 0;
+            color: black;
+        }
+
+        main {
+            display: block;
+            padding: 30px 0;
+        }
+
+        * {
+            outline: none !important;
+        }
+
+        a:hover {
+            text-decoration: none;
+            opacity: 0.95;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, a, input, div, textarea, label {
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        img {
+            border-style: none;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        header {
+            background: darkslategray;
+            padding: 50px;
+        }
+
+        .title-header .title {
+            display: inline-block;
+            color: #fff;
+            font-size: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        .title-header .logo {
+            display: inline-block;
+        }
+
+            .title-header .logo img {
+                vertical-align: middle;
+            }
+
+        nav {
+            background: #262d33;
+        }
+            nav li {
+                display: inline;
+                padding: 0 40px 0 40px;
+                text-align: center;
+            }
+
+            nav li a {
+                color: #AFB2B6;
+                display: inline-block;
+                padding: 10px 10px;
+            }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            height: 100px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+            footer a {
+                color: cornsilk;
+            }
+        /* Giriş bölgesi için stil ayarı */
+        .giris {
+            width: 360px; /* Giriş bölgesinin genişliği */
+            padding: 2% 0 0; /* Üst dolgu ayarı */
+            margin: auto; /* Otomatik kenar boşluğu ile ortala */
+        }
+        /* Form bölgesi için stil ayarı */
+        .form {
+            position: relative; /* Göreceli konumlandırma */
+            z-index: 1; /* Z indeksi (Yerleştirme düzeni) */
+            background: #FFFFFF; /* Arka plan rengi */
+            max-width: 360px; /* Maksimum genişlik */
+            margin: 0 auto 100px; /* Alt dolgu ve otomatik kenar boşluğu ile ortala */
+            padding: 30px; /* İç dolgu */
+            text-align: center; /* Metni ortala */
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); /* Kutu gölgesi efekti */
+        }
+        /* Formdaki input alanları için stil ayarı */
+            .form input {
+                font-family: "Roboto", sans-serif; /* Yazı tipi ailesi */
+                outline: 0; /* Odaklandığında çerçeve oluşmasını engelle */
+                background: #f2f2f2; /* Arka plan rengi */
+                width: 100%; /* Genişlik yüzde 100 */
+                border: 0; /* Kenarlık yok */
+                margin: 0 0 15px; /* Alt, sağ ve sol boşluklar */
+                padding: 15px; /* İç dolgu */
+                box-sizing: border-box; /* Kutu modeli */
+                font-size: 14px; /* Yazı tipi boyutu */
+            }
+
+            .form button {
+                font-family: "Roboto", sans-serif; /* Yazı tipi ailesi */
+                text-transform: uppercase; /* Metni büyük harfe çevir */
+                outline: 0; /* Odaklandığında çerçeve oluşmasını engelle */
+                background: #4CAF50; /* Arka plan rengi */
+                width: 100%; /* Genişlik yüzde 100 */
+                border: 0; /* Kenarlık yok */
+                padding: 15px; /* İç dolgu */
+                color: #FFFFFF; /* Metin rengi */
+                font-size: 14px; /* Yazı tipi boyutu */
+                -webkit-transition: all 0.3 ease; /* WebKit tarayıcıları için geçiş efekti */
+                transition: all 0.3 ease; /* Geçiş efekti */
+                cursor: pointer; /* İmleç tipi */
+            }
+                /* Formdaki butonun hover, active ve focus durumları için stil ayarı */
+                .form button:hover, .form button:active, .form button:focus {
+                    background: #43A047; /* Hover, active ve focus durumunda arka plan rengi */
+                }
+                /* Formdaki mesaj bölgesi için stil ayarı */
+            .form .mesaj {
+                margin: 15px 0 0; /* Üst, alt ve sağ boşluklar */
+                color: #b3b3b3; /* Metin rengi */
+                font-size: 12px; /* Yazı tipi boyutu */
+            }
+
+                .form .mesaj a {
+                    color: #4CAF50; /* Bağlantı rengi */
+                    text-decoration: none; /* Alt çizgiyi kaldır */
+                }
+            /* Formdaki kayıt bölgesi için stil ayarı (başlangıçta gizlenmiş) */
+            .form .kayit {
+                display: none; /* Başlangıçta görünmez */
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="title-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Logo">
+                        <img src="images/coffee-cup-icon.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="title">Karin's Coffee Shop</div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="container">
+                <ul>
+                <li class="active"><a href="index.html">Menü</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="events.html">Etkinlikler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li><a href="join.html">Bize Katılın</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="giris">
+                <div class="form">
+                    <form class="kayit">
+                        <input type="text" placeholder="Adınız" />
+                        <input type="password" placeholder="Şifreniz" />
+                        <input type="text" placeholder="Mail Adresiniz" />
+                        <button>Oluştur</button>
+                        <p class="mesaj">Zaten Üye Misin ? <a href="#">Giriş Yap</a></p>
+                    </form>
+                    <form class="giris-from">
+                        <input type="text" placeholder="Adınız" />
+                        <input type="password" placeholder="Şifreniz" />
+                        <button>Giriş Yap</button>
+                        <p class="mesaj">Üye Değil Misin ? <a href="#">Hesap Oluştur</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <h2 class="text-white">Contact</h2>
+            <address>
+                <ul>
+                    <li>Adres: Lorem Ipsum is simply dummy text of the printing </li>
+                    <li>Telefon:<a href="tel:#"> (212)111-22-33</a></li>
+                    <li>Çalışma Saatleri: 08.00-22.00(Pzt-Perş) ; 09.00-22.30(Cum-Paz)</li>
+                    <li>E-mail:<a href="mailto:#"> coffee@shop.com</a></li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>

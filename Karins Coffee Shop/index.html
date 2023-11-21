@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <style>
+        /* Genel HTML ve metin düzenlemeleri */
+        html {
+            line-height: 1.15; /* Satır yüksekliği */
+            -webkit-text-size-adjust: 100%; /* 2 */
+        }
+        /* Body öğesi stil ayarları */
+        body {
+            font-size: 16px; /* Genel font boyutu */
+            font-family: "Arial", Helvetica, sans-serif; /* Font ailesi */
+            margin: 0; /* Kenar boşluğu sıfırlandı */
+            color: black; /* Metin rengi siyah */
+        }
+        /* Sayfa içeriğinin genişliği ve boşluk ayarları */
+        main {
+            display: block;
+            padding: 30px 0; /* Üst ve alt dolgu */
+        }
+        /* Tüm elemanlardaki çerçeve (outline) kaldırma */
+        * {
+            outline: none !important;
+        }
+        /* Bağlantıların hover durumundaki stil ayarları */
+        a:hover {
+            text-decoration: none; /* Alt çizgiyi kaldırma */
+            opacity: 0.95; /* Opaklık ayarı */
+        }
+        /* Başlıklar, paragraflar, bağlantılar, giriş alanları vb. için genel stil ayarları */
+        h1, h2, h3, h4, h5, h6, p, a, input, div, textarea, label {
+            margin: 0; /* Kenar boşluğu sıfırlandı */
+        }
+        /* H2 başlıkları için özel stil ayarı */
+        h2 {
+            font-size: 28px; /* H2 başlıkları için font boyutu */
+        }
+        /* Sırasız liste öğeleri için genel stil ayarları */
+        ul {
+            list-style: none; /* Liste işaretini kaldırma */
+            padding-left: 0;
+            font-weight: 400; /* Yazı tipi kalınlığı */
+            font-style: normal; /* Yazı tipi stili */
+            margin: 0; /* Kenar boşluğu sıfırlandı */
+        }
+        /* Paragraf öğeleri için font boyutu ayarı */
+        p {
+            font-size: 1em; /* Paragraflar için font boyutu */
+        }
+        /* Resim öğelerinden çerçeve (border) kaldırma */
+        img {
+            border-style: none; /* Resim çerçevesini kaldırma */
+        }
+        /* Sayfa içeriğinin genişliği ve boşluk ayarları */
+        .container {
+            width: 1200px; /* Container genişliği */
+            margin: 0 auto; /* Otomatik kenar boşluğu */
+            padding: 0 15px; /* Sağ ve sol dolgu */
+            max-width: 100%; /* Maksimum genişlik */
+            box-sizing: border-box; /* Kutu modeli */
+        }
+        /* Temizleme (clearfix) özelliği */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /* Header stil ayarları */
+        header {
+            background: darkslategray; /* Header arka plan rengi */
+            padding: 50px; /* Header iç dolgu */
+        }
+        /* Başlık ve logo stil ayarları */
+        .title-header .title {
+            display: inline-block;
+            color: white; /* Metin rengi beyaz */
+            font-size: 30px; /* Başlık font boyutu */
+            padding-bottom: 30px; /* Alt dolgu */
+            text-align: center; /* Metin hizalama */
+        }
+
+        .title-header .logo {
+            display: inline-block;
+        }
+
+            .title-header .logo img {
+                vertical-align: middle;
+            }
+        /* Navigasyon (nav) stil ayarları */
+        nav {
+            background: #262d33; /* Navigasyon arka plan rengi */
+        }
+        nav li{
+           
+            display:inline;
+            padding: 0 40px 0 40px;
+            text-align:center;
+        }
+
+            nav li a {
+                color: #AFB2B6; /* Bağlantı metin rengi */
+                display: inline-block;
+                padding: 10px 10px; /* Bağlantı iç dolgu */
+            }
+        /* Footer stil ayarları */
+        footer {
+            background: #333; /* Footer arka plan rengi */
+            color: #fff; /* Metin rengi beyaz */
+            padding: 10px; /* Footer iç dolgu */
+            height: 100px; /* Footer yüksekliği */
+            position: absolute; /* Footer yüksekliği */
+            width: 100%; /* Footer genişliği */
+            bottom: 0; /* En alta konumlandırma */
+        }
+
+            footer a {
+                color: cornsilk; /* Bağlantı metin rengi */
+            }
+        /* İlave öğeler menü başlıkları için stil ayarı */
+        .menu-item.additional-items h2 {
+            width: 50%;
+            float: left; /* Sol tarafa yasla */
+        }
+
+        .menu-item.additional-items .item-inner ul {
+            display: inline-block;
+            width: 50%;
+            float: left; /* Sol tarafa yasla */
+        }    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="title-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Logo">
+                        <img src="images/coffee-cup-icon.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="title">Karin's Coffee Shop</div>
+            </div>
+           
+            <nav>
+                <ul >
+                    <li class="active"><a href="index.html">Menü</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="events.html">Etkinlikler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li><a href="join.html">Bize Katılın</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Ana içerik alanı -->
+        <div class="container">
+            <!-- İlk menü öğesi: İçecekler -->
+            <div class="menu-item additional-items">
+                <!-- İçeceklerin başlık ve ek bilgiler -->
+                <div class="title-item clearfix">
+                    <h2><img src="images/drink_icon.png" alt="Icon"> İçecekler</h2>
+                    <h2>Ekle -> Soya/Badem Sütü <img src="images/milk_icon.png" alt="Icon"></h2>
+                </div>
+                <!-- İçeceklerin listesi ve fiyatları -->
+                <div class="item-inner clearfix">
+                    <ul>
+                        <li>Espresso 66TL</li>
+                        <li>Macchiato 60TL</li>
+                        <li>Cappucino 50TL</li>
+                        <li>Latte 55TL</li>
+                        <li>Regular Coffee 48TL</li>
+                    </ul>
+                    <ul>
+                        <li>+ 14.99TL</li>
+                    </ul>
+                </div>
+            </div>
+            <ul><li><br /></li></ul>
+            <!-- İkinci menü öğesi: Yiyecekler -->
+            <div class="menu-item">
+                <!-- Yiyeceklerin başlığı -->
+                <div class="title-item">
+                    <h2><img src="images/food_Icon.png" alt="Icon"> Yiyecekler</h2>
+                </div>
+                <div class="item-inner">
+                    <ul>
+                        <li>Bagel w/Krem Peynir 75TL</li>
+                        <li>Yogurt w/Granola 72TL</li>
+                        <li>Yulaf Ezmesi 68TL</li>
+                        <li>Ton Balıklı Sandviç 65TL</li>
+                        <li>Sezar Salata 70TL</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer içeriği ve iletişim bilgileri -->
+        <div class="container">
+            <h2 class="text-white">Contact</h2>
+            <address>
+                <ul>
+                    <li>Adres: Lorem Ipsum is simply dummy text of the printing </li>
+                    <li>Telefon:<a href="tel:#"> (212)111-22-33</a></li>
+                    <li>Çalışma Saatleri: 08.00-22.00(Pzt-Perş) ; 09.00-22.30(Cum-Paz)</li>
+                    <li>E-mail:<a href="mailto:#"> coffee@shop.com</a></li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>
